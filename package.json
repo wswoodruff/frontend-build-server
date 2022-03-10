@@ -11,8 +11,10 @@
   },
   "scripts": {
     "start": "node server",
+    "dev": "open http://0.0.0.0:3000 && node server",
     "test": "lab -a @hapi/code -L",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "copy-and-serve-build": "./scripts/copy-and-serve-build.sh"
   },
   "dependencies": {
     "@hapi/boom": "9.x.x",
