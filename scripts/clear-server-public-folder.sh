@@ -3,6 +3,9 @@
 public_folder="../lib/public"
 
 # Clear out public folder without removing it
-rm -r "$public_folder/*"
+
+rm -rf $public_folder
+mkdir $public_folder
 
 echo "CLEARED PUBLIC FOLDER $public_folder"
+
